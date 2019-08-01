@@ -1,0 +1,131 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:textSize="16sp">
+
+    <EditText
+        android:id="@+id/bHour"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:height="40dp"
+        android:ems="10"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toStartOf="@+id/bSeparator"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/bSeparator"
+        android:layout_width="20dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:height="40dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text=":"
+        app:layout_constraintEnd_toStartOf="@+id/bMinute"
+        app:layout_constraintStart_toEndOf="@+id/bHour"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/bMinute"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:height="40dp"
+        android:ems="10"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toStartOf="@+id/beSeparator"
+        app:layout_constraintStart_toEndOf="@+id/bSeparator"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/beSeparator"
+        android:layout_width="20dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:height="40dp"
+        android:gravity="center|center_horizontal"
+        android:text="-"
+        app:layout_constraintEnd_toStartOf="@+id/eHour"
+        app:layout_constraintStart_toEndOf="@+id/bMinute"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/eHour"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:height="40dp"
+        android:ems="10"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toStartOf="@+id/eSeparator"
+        app:layout_constraintStart_toEndOf="@+id/beSeparator"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/eSeparator"
+        android:layout_width="20dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:height="40dp"
+        android:gravity="center|center_horizontal"
+        android:text=":"
+        app:layout_constraintEnd_toStartOf="@+id/eMinute"
+        app:layout_constraintStart_toEndOf="@+id/eHour"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/eMinute"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:height="40dp"
+        android:ems="10"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toStartOf="@+id/delete"
+        app:layout_constraintStart_toEndOf="@+id/eSeparator"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/delete"
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.563"
+        app:layout_constraintStart_toEndOf="@+id/eMinute"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/btn_dialog" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
